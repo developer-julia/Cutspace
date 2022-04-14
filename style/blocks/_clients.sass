@@ -1,0 +1,33 @@
+.clients
+    padding: 50px 0
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+    &__item
+        display: flex
+        justify-content: center
+        flex-basis: 20%
+        transition: all .3s linear
+        &:hover, &:focus
+            transform: translateY(-5px)
+
+// =========== Adaptive
+@media screen and (max-width: 992px)
+    .clients
+        padding: 40px 0 45px 0
+        &__wrap
+            justify-content: center
+            gap: 50px
+        &__item
+            flex-basis: 25%
+@media screen and (max-width: 860px)
+    .clients
+        &__item
+            flex-basis: 35%
+@media screen and (max-width: 576px)
+    .clients
+        padding: 140px 0 45px 0
+        &__item
+            flex-basis: 100%

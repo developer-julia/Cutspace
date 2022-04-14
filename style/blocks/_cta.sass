@@ -1,0 +1,72 @@
+.cta
+    padding: 72px 0 0 0
+    &__content
+        position: relative
+        margin-bottom: -230px
+
+        display: flex
+        justify-content: space-between
+        align-items: stretch
+        background-color: $blue-color
+        border-radius: 20px
+    &__image
+        border-top: 25px solid #fff
+        border-right: 25px solid #fff
+        border-radius: 0 20px 0 0
+        &-block
+            margin-top: 65px
+    &__text
+        padding-left: 95px
+        padding-right: 40px
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        background: url(./../img/cta/oval-bottom-left.svg) bottom left -150px no-repeat, url(./../img/cta/oval-top-right.svg) right top no-repeat
+        color: $white-color
+    &__title
+        margin-bottom: 15px
+    &__subtitle
+        margin-bottom: 30px
+    &__link
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+    &__button
+        &_play
+            &::before
+                content: ""
+                display: inline-block
+                width: 11px
+                height: 12px
+                margin-right: 8px
+                background-size: initial
+                background-image: url("./../img/icons/play-icon.svg")
+
+// ========= Adaptive
+@media screen and (max-width: 992px)
+    .cta
+        padding: 40px 0 0 0
+        &__content
+            flex-direction: column-reverse
+        &__image-block
+            margin-top: 0
+            padding-right: 15px
+        &__text
+            padding: 60px 40px 60px 95px
+@media screen and (max-width: 860px)
+    .cta
+        &__text
+            padding: 60px
+            padding-right: 40px
+@media screen and (max-width: 576px)
+    .cta
+        &__text
+            padding: 60px 15px 40px 40px
+        &__button
+            text-align: center
+            flex-basis: 100%
+@media screen and (max-width: 425px)
+    .cta
+        &__text
+            padding: 100px 20px 40px 20px

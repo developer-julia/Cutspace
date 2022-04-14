@@ -1,0 +1,37 @@
+.header-burger
+    display: none
+// ===== ADAPTIVE 
+@media screen and (max-width: 992px)
+    .header-burger span, .header-burger::before, .header-burger::after
+        height: 3px
+        width: 100%
+        position: absolute
+        background: #515758
+        margin: 0 auto
+    .header-burger span
+        top: 16px
+    .header-burger::before, .header-burger::after
+        content: ""
+    .header-burger::before
+        top: 5px
+    .header-burger::after
+        bottom: 5px
+
+    .header-burger
+        position: absolute
+        right: 5%
+        display: block
+        width: 40px
+        height: 35px
+        z-index: 10
+        transition: transform 0.5s
+        &_active span
+            opacity: 0
+        &_active
+            &::before
+                top: 50%
+                transform: rotate(45deg)
+        &_active
+            &::after
+                top: 50%
+                transform: rotate(-45deg)

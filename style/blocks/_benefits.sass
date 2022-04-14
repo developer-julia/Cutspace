@@ -1,0 +1,64 @@
+.benefits
+    padding: 290px 0 56px 0
+    background-color: $white-color
+    &__title
+        text-align: center
+        margin-bottom: 60px
+    &__content
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: start
+    &__item
+        flex-basis: 25%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-bottom: 30px
+        transition: all .2s linear
+        &:hover, &:focus
+            transform: translateY(-5px)
+            .benefits__icon
+                path, ellipse
+                    fill: #ffffff
+                circle
+                    fill: #F78434
+                    fill-opacity: 1
+        &__icon
+            path, ellipse
+                fill: #58BEBF
+            circle
+                fill: #58BEBF
+                fill-opacity: 0.2
+        &-icon
+            margin-bottom: 15px
+        &-title
+            font-size: 28px
+            line-height: 42px
+            letter-spacing: 0.5px
+            margin-bottom: 2px
+        &-subtitle
+            line-height: 27px
+            text-align: center
+            letter-spacing: 1.15px
+
+// ========== Adaptive
+@media screen and (max-width: 992px)
+    .benefits
+        &__content
+            gap: 20px
+        &__item
+            flex-basis: 40%
+@media screen and (max-width: 860px)
+    .benefits
+        padding: 270px 0 40px 0
+        &__title
+            margin-bottom: 40px
+        &__item
+            &-subtitle
+                line-height: 20px
+@media screen and (max-width: 576px)
+    .benefits
+        &__item
+            flex-basis: 70%

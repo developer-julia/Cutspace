@@ -1,0 +1,36 @@
+.serve
+    background-color: #F5F6FA
+    padding-top: 100px
+    &__container
+        position: relative
+        margin-bottom: -180px
+        margin-top: 290px
+    &__title, &__subtitle
+        text-align: center
+    &__title
+        margin-bottom: 10px
+    &__subtitle
+        margin-bottom: 45px
+    &__content
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: start
+        gap: 30px
+    &__card
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+@media screen and (max-width: 992px)
+    .serve
+        padding-top: 70px
+        &__container
+            margin-top: 270px
+        &__content
+            justify-content: center
+        &__title
+            font-size: 35px
+        &__subtitle
+            margin-bottom: 35px

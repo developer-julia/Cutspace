@@ -1,0 +1,68 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
+
+body
+    font-family: 'Poppins', sans-serif
+    font-weight: 400
+    color: $text-color
+.body-lock
+    overflow: hidden
+.container
+    padding-left: 15px
+    padding-right: 15px
+    max-width: 1140px
+    margin-left: auto
+    margin-right: auto
+    &_fluid
+        max-width: 1140px
+        margin-left: auto
+        margin-right: auto
+        max-width: 100%
+.section-title
+    font-size: 42px
+    line-height: 62px
+    letter-spacing: 0.8px
+    font-weight: 700
+.section-subtitle
+    font-size: 16px
+    line-height: 27px
+    letter-spacing: 1.15px
+.button
+    cursor: pointer
+    display: inline-block
+    height: 58px
+    padding: 18px 37px 16px 37px
+    border-radius: 29px
+    font-size: 16px
+    line-height: 24px
+    transition: all .3s linear
+    &--accent-color
+        font-weight: 700
+        background-color: #DEF2F2
+        color: $text-color
+        &:hover, &:focus, &:active
+            color: $white-color
+            background-color: $accent-color
+    &_active
+        color: $white-color
+        background-color: $accent-color
+    &--white-color
+        background-color: $white-color
+        color: $text-color
+        font-weight: 700
+        &:hover, &:focus, &:active
+            background-color: $text-color
+            color: $white-color
+
+// ====== Adaptive
+@media screen and (max-width: 992px)
+    .section-title
+        font-size: 35px
+        line-height: 42px
+    .container
+        width: 100%
+        margin: 0
+        padding: 0 30px
+@media screen and (max-width: 768px)
+    .container
+        padding: 0 15px

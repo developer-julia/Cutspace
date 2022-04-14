@@ -1,0 +1,23 @@
+.img-card
+    position: relative
+    width: 385px
+    &__item
+        overflow-x: hidden
+        border-radius: 20px
+    &_rounder
+        border-radius: 20px 20px 0 20px
+    &__info
+        position: absolute
+        right: -46px
+        bottom: 87px
+
+// ============== Adaptive
+@media screen and (max-width: 768px)
+    .img-card
+        &__info
+            position: absolute
+            right: 7%
+            bottom: 15%
+@media screen and (max-width: 520px)
+    .img-card
+        width: 305px

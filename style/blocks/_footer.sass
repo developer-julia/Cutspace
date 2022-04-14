@@ -1,0 +1,76 @@
+.footer
+    padding: 90px 0
+    &__contact
+        display: flex
+        flex-wrap: wrap
+        align-items: start
+        justify-content: space-between
+        &-info
+            flex-basis: 25%
+        &-links
+            display: flex
+            justify-content: space-between
+            flex-basis: 60%
+            gap: 45px
+            flex-wrap: wrap
+    &__link
+        transition: all .3s linear
+        &:hover, &:focus, &:active
+            color: $blue-color
+        &-title
+            font-size: 21px
+            line-height: 32px
+            letter-spacing: 0.5px
+    &__logo
+        font-size: 24px
+        color: $text-color
+        font-weight: 700
+        line-height: 1
+        margin-bottom: 15px
+    &__description
+        max-width: 300px
+        margin-bottom: 40px
+    &__social
+        &-links
+            display: flex
+            justify-content: space-between
+            margin-bottom: 45px
+            gap: 30px
+            flex-wrap: wrap
+        &-item
+            transition: all .3s linear
+            &:hover, &:focus, &:active
+                transform: translateY(-5px)
+    &__link-block
+        display: flex
+        flex-direction: column
+        gap: 13px
+
+// ============ Adaptive
+@media screen and (max-width: 992px)
+    .footer
+        padding: 70px 0
+        &__contact
+            justify-content: start
+            &-info
+                flex-basis: 30%
+            &-links
+                flex-basis: 95%
+@media screen and (max-width: 768px)
+    .footer
+        padding: 50px 0
+        &__contact
+            &-info
+                flex-basis: 50%
+            &-links
+                flex-basis: 100%
+@media screen and (max-width: 580px)
+    .footer
+        &__contact
+            justify-content: center
+            &-info
+                flex-basis: 90%
+            &-links
+                flex-basis: 90%
+                justify-content: start
+                gap: 60px

@@ -1,0 +1,68 @@
+.header
+    position: fixed
+    width: 100%
+    z-index: 11
+    background-color: #fff
+    padding-top: 35px
+    padding-bottom: 33px
+    transition: all .3s linear
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__menu
+        display: flex
+        gap: 42px
+    &__logo
+        font-size: 24px
+        color: $text-color
+        font-weight: 700
+        line-height: 1
+.scroll-header
+    background-color: #fff
+    filter: drop-shadow(0px 10px 52px rgba(0, 0, 0, 0.08))
+.logo
+    display: flex
+    align-items: center
+    gap: 10px
+.menu
+    &__link
+        line-height: 24px
+        color: $text-color
+        transition: all .3s linear
+        &:hover, &:focus, &:active
+            color: $accent-color
+
+// ===== ADAPTIVE 
+@media screen and (max-width: 992px)
+    .header
+        &__nav
+            overflow: auto
+            max-height: calc(100vh - 100px)
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 600px
+            background-color: #fff
+            filter: drop-shadow(0px 10px 52px rgba(0, 0, 0, 0.08))
+            padding-top: 100px
+            opacity: 0
+            transform: translateX(100%)
+            transition: transform .5s linear, opacity .5s
+            &_active
+                opacity: 1
+                transform: translateX(0)
+        &__menu
+            padding: 20px 0 50px 0
+            width: 100%
+            display: flex
+            align-items: center
+            flex-direction: column
+            gap: 40px
+    .menu
+        &__link
+            font-size: 32px
+            line-height: 27px
+            color: $text-color
+            transition: all .3s linear

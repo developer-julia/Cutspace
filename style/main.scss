@@ -1,0 +1,30 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/header-burger";
+@import "./blocks/hero";
+@import "./blocks/form";
+
+@import "./blocks/clients";
+
+@import "./blocks/objects";
+@import "./blocks/img-card";
+@import "./blocks/card-info";
+
+@import "./blocks/cta";
+
+@import "./blocks/serve";
+@import "./blocks/serve-card";
+
+@import "./blocks/benefits";
+
+@import "./blocks/testimonials";
+
+@import "./blocks/contacts";
+
+@import "./blocks/footer";
